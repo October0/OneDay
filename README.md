@@ -13,6 +13,7 @@
 ![1](./static/article.gif)![2](./static/translate.gif)![3](./static/video.gif)![4](./static/video2.gif)![5](./static/user.gif)
 
 ### 目标功能
+[x] 新增Todo列表功能 
 -[X] 每日推荐一文   
 -[X] 随机一文  
 -[X] 每日一文转发   
