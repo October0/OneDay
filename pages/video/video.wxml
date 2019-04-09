@@ -1,0 +1,15 @@
+<wxs src="../../util/filter.wxs" module="util" />
+<view class="" container>
+  <text class='header'>每日精选</text>
+  <view class='wrap' wx:for="{{video}}" wx:key="item.data.id">
+    <video class='video' src='{{item.data.playUrl}}' id="video{{item.data.id}}" wx:if='{{(item.data.id==playIndex)}}' autoplay='{{true}}' show-center-play-btn="{{false}}" controls="true" objectFit="cover"></video>
+    <scroll-view class='cover' scroll-y="true">
+      <cover-image class='img' src='{{item.data.cover.detail}}' wx:if='{{item.data.id!=playIndex}}'></cover-image>
+      <cover-image class='play' src='/images/icon/play.png' wx:if='{{item.data.id!=playIndex}}' data-index='{{item.data.id}}' bindtap='videoPlay'></cover-image>
+    </scroll-view>
+    <text class='title'>{{item.data.title}}</text>
+    <text class='dec'>{{item.data.description}}</text>
+  </view>
+  <v-loading wx:if="{{loading}}" class="loading" />
+  <text class='error' wx:if='{{hidden}}'>程序猿已溜，明日再来吧(*^_^*)！</text>
+</view>

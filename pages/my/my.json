@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "v-login": "/components/image-button/index"
+  }
+}

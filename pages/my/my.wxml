@@ -1,0 +1,20 @@
+<view class='container'>
+  <view class='user'>
+    <v-login class="login-btn" open-type="getUserInfo" wx:if="{{!authorized}}" bindtap="onGetUserInfo">
+      <image class='login' slot="img" src='/images/icon/my.png'></image>
+    </v-login>
+    <view class='avatar' wx:if="{{authorized}}">
+      <image src='{{userInfo.avatarUrl}}' class="avatar-img"></image>
+      <text>{{userInfo.nickName}}</text>
+    </view>
+  </view>
+  <view class="list">
+    <view class='about'>
+      <text>关于我们</text>
+    </view>
+    <view class='Recent'>
+      <text>最近浏览</text>
+      <text>{{}}</text>
+    </view>
+  </view>
+</view>

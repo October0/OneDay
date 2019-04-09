@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+  "v-episode": "/components/episode/episode",
+  "v-like": "/components/like/like",
+  "v-share": "/components/image-button/index"
+  }
+}

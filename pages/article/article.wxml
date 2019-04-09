@@ -1,0 +1,25 @@
+<wxs src="../../util/filter.wxs" module="util" />
+<view class='header'>
+  <text class='txt'>每日一文</text>
+  <v-episode class="episode" episode="{{article.wc}}" />
+</view>
+<view class='container'>
+  <view class='border' hidden='{{show}}'>
+    <text class="stitle">{{article.title}}</text>
+    <text class="sauthor">{{article.author}}</text>
+    <text class="dec">{{article.digest}}...</text>
+    <button class="btn" bindtap='hidden'>瞧瞧</button>
+  </view>
+  <view class='wrap' hidden='{{!show}}'>
+    <text class='title'>{{article.title}}</text>
+    <text class='author'>{{article.author}}</text>
+    <text class='content'>{{util.format(text)}}</text>
+    <view class='footer'>
+      <v-like class="like" />
+      <button class='random' bindtap="random">再来一篇</button>
+      <v-share class="share-btn" open-type="share">
+        <image class="share" slot="img" src="/images/icon/share.png" />
+      </v-share>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,28 @@
+<view class='container'>
+  <view class="header">
+    <text class='left'>自动检测语言</text>
+    <image class='img' src='../../images/icon/right.png'></image>
+    <view class="section">
+      <picker bind:change="bindPickerChange" value="{{index}}" range="{{langList}}">
+        <view class="picker">
+          {{langList[index]}}
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view class='input-area'>
+    <view class='textarea-container'>
+      <textarea placeholder="输入文字" bindinput='input' value='{{query}}' />
+    </view>
+    <image class='img-close' src='/images/icon/close.png' bindtap="clear" hidden='{{showIcon}}'></image>
+  </view>
+  <button class='btn' bindtap='onConfirm'>点击翻译</button>
+  <view class='output-area'>
+    <text class='result-container'>
+    {{trans_result[0].dst}}
+    </text>
+  </view>
+  <view class='copyright'>
+    <text>© 2019 One</text>
+  </view>
+</view>

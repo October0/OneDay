@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "v-translate": "/components/change/change"
+  }
+}

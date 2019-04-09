@@ -1,0 +1,23 @@
+var format = function(text) {
+  if (!text) {
+    return
+  }
+  var reg = getRegExp('\<p\>', 'g')
+  var rege = getRegExp('\</p\>', 'g')
+  text = text.replace(reg, '\n')
+  return text.replace(rege, '\n')
+}
+
+var filter = function (itemList) {
+  for (var i = 0; i < 16; i++) {
+    if (itemList[i].type == 'video') {
+      console.log(itemList[i])
+      return
+    }
+  }
+}
+
+module.exports = {
+  format: format,
+  filter: filter,
+}

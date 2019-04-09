@@ -1,0 +1,78 @@
+.header {
+  height: 96rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.left, .picker {
+  height: 96rpx;
+  line-height: 96rpx;
+  font-size: 30rpx;
+  font-weight: 600;
+  padding: 100rpx;
+  color: #567b95;
+}
+
+.img {
+  display: block;
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.textarea-container {
+  display: flex;
+  font-size: 46rpx;
+  min-height: 220rpx;
+  box-shadow: 1px 1px 2px #9999;
+  padding-left: 20rpx;
+  padding-top: 30rpx;
+  background-color: #fff;
+  position: relative;
+}
+
+.img-close {
+  display: block;
+  width: 36rpx;
+  height: 36rpx;
+  position: absolute;
+  top: 130rpx;
+  right: 30rpx;
+}
+
+.textarea {
+  width: 100%;
+}
+
+.btn {
+  width: 80%;
+  color: #fff;
+  margin-top: 30rpx;
+  background: #567b95;
+}
+
+.output-area {
+  font-size: 40rpx;
+  background-color: #f2f2f2;
+  margin-top: 30rpx;
+}
+
+.result-container {
+  display: block;
+  color: #567b95;
+  min-height: 400rpx;
+  padding-left: 16rpx;
+  padding-bottom: 40rpx;
+  word-break: break-all;
+}
+
+.copyright {
+  color: #999;
+  position: absolute;
+  left: 290rpx;
+  bottom: 10rpx;
+  font-size: 28rpx;
+}

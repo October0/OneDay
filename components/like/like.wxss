@@ -1,0 +1,5 @@
+.container > image{
+  display: block;
+  width: 48rpx;
+  height: 48rpx;
+}

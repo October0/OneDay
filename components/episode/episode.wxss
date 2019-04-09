@@ -1,0 +1,44 @@
+.container{
+  height:40rpx;
+  display:inline-flex;
+  flex-direction: row;
+}
+
+.index-container{
+  display:flex;
+  flex-direction: row;
+  align-items: baseline;      
+}
+
+.plain{
+  font-size:16rpx;
+}
+
+.index{
+  font-size:36rpx;
+  line-height:30rpx; 
+  font-weight:600;
+  margin-right:7rpx;
+}
+
+.line{
+  height:26rpx;
+  margin-right:7rpx;
+  border-left:1px solid #333;
+}
+
+
+.date-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.month{
+  font-size:16rpx;
+  line-height: 16rpx;
+  margin-top: -2px;
+}
+
+.year{
+  font-size:16rpx;
+}
