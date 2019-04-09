@@ -10,7 +10,7 @@
 百度翻译使用的是百度翻译的开源 API
 
 ###效果图
-!(./static/article.gif)!(./static/translate.gif)!(./static/video.gif)!(./static/video2.gif)!(./static/user.gif)
+![1](./static/article.gif)![2](./static/translate.gif)![3](./static/video.gif)![4](./static/video2.gif)![5](./static/user.gif)
 
 ###目标功能
 每日推荐一文
